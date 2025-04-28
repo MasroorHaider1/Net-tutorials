@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Internet Protection - Net Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lesson-content {
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lesson-content h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+            border-bottom: 2px solid #f1d1b0;
+            padding-bottom: 5px;
+        }
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .protection-method {
+            background-color: #e7f5ff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .example {
+            font-family: monospace;
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        ul.security-tips {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        ul.security-tips li {
+            margin-bottom: 10px;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Net Tutorials Logo">
+        </div>
+        <h1>Net Tutorials</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="technology.html">Technology</a>
+        <a href="cyber-security.html">Cyber Security</a>
+    </nav>
+
+    <div class="container">
+        <h2>Lesson 1: How to Protect Yourself on the Internet</h2>
+        
+        <div class="lesson-content">
+            <h3>Understanding Phishing Links</h3>
+            <p>Phishing links are used by scammers and attackers to trick or deceive people into revealing their personal information by disguising those links as being from reliable sources.</p>
+            
+            <div class="warning-box">
+                <p>These types of links are usually seen through:</p>
+                <ul class="security-tips">
+                    <li>Emails</li>
+                    <li>Social media</li>
+                    <li>QR codes</li>
+                    <li>Text messages</li>
+                    <li>Attachments</li>
+                    <li>Fake ads</li>
+                </ul>
+                <p>Common types include Spear Phishing, HTTPS Phishing, and Clone Phishing.</p>
+            </div>
+
+            <h3>How to Recognize Phishing Links</h3>
+            <ul class="security-tips">
+                <li>The link is not secure (doesn't start with <span class="example">https://</span>)</li>
+                <li>The website is designed poorly and contains grammatical flaws</li>
+                <li>The website contains many pop-ups</li>
+                <li>The website requests unusual forms of payment (like Bitcoin)</li>
+                <li>The link is attempting to emulate a popular website</li>
+            </ul>
+
+            <h3>Phishing Scams in Emails</h3>
+            <div class="protection-method">
+                <p>Phishing links often appear in emails that seem to be from real companies but are fake. Warning signs include:</p>
+                <ul>
+                    <li>Grammatical or spelling errors</li>
+                    <li>Weird email addresses in the "From" field</li>
+                    <li>Links that go to fake websites controlled by attackers</li>
+                </ul>
+            </div>
+
+            <h3>How to Recognize Phishing Links in Web Links</h3>
+            <div class="protection-method">
+                <h4>Look for the Lock</h4>
+                <p>Check for <span class="example">HTTPS</span> and a lock icon in the address bar. <span class="example">HTTP</span> without the "S" means your data isn't secure.</p>
+                
+                <h4>Look for Misspellings</h4>
+                <p>Phishers use URLs like <span class="example">paypa1.com</span> instead of <span class="example">paypal.com</span></p>
+                
+                <h4>Verify Domain Names</h4>
+                <p><span class="example">apple.com.secure-login.com</span> is not the same as <span class="example">apple.com</span></p>
+            </div>
+
+            <h3>How to Protect Your Information</h3>
+            <div class="protection-method">
+                <h4>Enable Multi-Factor Authentication (MFA)</h4>
+                <p>Requires multiple verification steps:</p>
+                <ul>
+                    <li><strong>Knowledge:</strong> Something you know (password)</li>
+                    <li><strong>Possession:</strong> Something you have (phone)</li>
+                    <li><strong>Inherence:</strong> Something you are (fingerprint)</li>
+                </ul>
+            </div>
+
+            <div class="protection-method">
+                <h4>Additional Protection Tips</h4>
+                <ul>
+                    <li>Never enter credentials after clicking links in emails</li>
+                    <li>Use a password manager to generate and store strong passwords</li>
+                    <li>Keep your software and browsers updated</li>
+                    <li>Be skeptical of urgent requests for personal information</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="security-lesson0.html" class="nav-button">← Previous Lesson</a>
+            <a href="security-lesson2.html" class="nav-button">Next Lesson →</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Net Tutorials. All rights reserved.
+    </footer>
+</body>
+</html>

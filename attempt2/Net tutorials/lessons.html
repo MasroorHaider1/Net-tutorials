@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons - Net Tutorials</title>
+    <style>
+        /* Your original CSS with only these flexbox additions */
+        .info-section {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+            padding: 10px 0;
+            overflow-x: auto;
+        }
+        .column {
+            flex: 0 0 300px;
+            min-height: 400px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Net Tutorials Logo">
+        </div>
+        <h1>Net Tutorials</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
+    </nav>
+    <div class="container">
+        <section id="lessons">
+            <h2>Lessons</h2>
+            <p>The lessons on various topics, click on a specific topic and find what you are looking for.</p>
+            
+            <div class="row info-row">
+                <section class="info-section">
+                    <!-- Science Column -->
+                    <div class="column column-1" onclick="window.location.href='science.html'">
+                        <h2>Science</h2>
+                        <img src="science.jpg" alt="Science">
+                        <p>Explore the wonders of the natural world through our science lessons.</p>
+                    </div>
+
+                    <!-- Technology Column -->
+                    <div class="column column-2" onclick="window.location.href='technology.html'">
+                        <h2>Technology</h2>
+                        <img src="technology.jpg" alt="Technology">
+                        <p>Learn about the latest advancements in technology and how they shape our world.</p>
+                    </div>
+
+                    <!-- Math Column -->
+                    <div class="column column-3" onclick="window.location.href='math.html'">
+                        <h2>Math</h2>
+                        <img src="math.jpg" alt="Math">
+                        <p>Master the fundamentals of mathematics and solve complex problems.</p>
+                    </div>
+
+                    <!-- Engineering Column -->
+                    <div class="column column-4" onclick="window.location.href='engineering.html'">
+                        <h2>Engineering</h2>
+                        <img src="engineering.jpg" alt="Engineering">
+                        <p>Discover the principles of engineering and how they are applied in real-world projects.</p>
+                    </div>
+
+                    <!-- Other Column -->
+                    <div class="column column-5" onclick="window.location.href='other.html'">
+                        <h2>Other</h2>
+                        <img src="other.jpg" alt="Other">
+                        <p>Explore a variety of other topics that don't fit into the main categories.</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2023 Net Tutorials. All rights reserved.
+    </footer>
+</body>
+</html>

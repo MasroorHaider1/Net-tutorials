@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - Net Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Flexbox fix for technology subjects */
+        .subject-section {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+            padding: 10px 0;
+            overflow-x: auto;
+        }
+        .subject-card {
+            flex: 0 0 300px;
+            min-height: 350px;
+        }
+        /* Lesson list styling */
+        .lesson-list {
+            margin-top: 30px;
+        }
+        .lesson-card {
+            padding: 20px;
+            margin-bottom: 15px;
+            background-color: #f1d1b0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .lesson-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Net Tutorials Logo">
+        </div>
+        <h1>Net Tutorials</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
+    </nav>
+    
+    <div class="container">
+        <h2>Technology Subjects</h2>
+        
+        <div class="subject-section">
+            <!-- Cyber Security Card -->
+            <div class="subject-card column-2" onclick="window.location.href='cyber-security.html'">
+                <h2>Cyber Security</h2>
+                <img src="cyber-security.jpg" alt="Cyber Security">
+                <p>Learn about network security, encryption, and threat prevention</p>
+            </div>
+            
+            <!-- Add more technology subjects here as needed -->
+            <!-- Example: Programming -->
+            <div class="subject-card column-2" onclick="window.location.href='programming.html'">
+                <h2>Programming</h2>
+                <img src="programming.jpg" alt="Programming">
+                <p>Master coding fundamentals and software development</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2023 Net Tutorials. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Virtual Machines - Net Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lesson-content {
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lesson-content h3 {
+            color: #2c3e50;
+            margin-top: 30px;
+            border-bottom: 2px solid #f1d1b0;
+            padding-bottom: 5px;
+        }
+        .benefit-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .step-box {
+            background-color: #e3f2fd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            border-left: 4px solid #2196f3;
+        }
+        .resource-list {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .code {
+            font-family: monospace;
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .screenshot {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Net Tutorials Logo">
+        </div>
+        <h1>Net Tutorials</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="technology.html">Technology</a>
+        <a href="cyber-security.html">Cyber Security</a>
+    </nav>
+
+    <div class="container">
+        <h2>Lesson 2: Introduction to Virtual Machines</h2>
+        
+        <div class="lesson-content">
+            <h3>What is a Virtual Machine?</h3>
+            <p>A virtual machine is a virtual computer that can be installed into a physical computer. It emulates a complete computer system, allowing you to run different operating systems on the same hardware.</p>
+            
+            <div class="benefit-box">
+                <h4>Benefits of Virtual Machines:</h4>
+                <ul>
+                    <li><strong>Cost-effective:</strong> Run multiple computers on one physical machine</li>
+                    <li><strong>Safe learning environment:</strong> Experiment without risking your main system</li>
+                    <li><strong>Easy recovery:</strong> Delete and recreate VMs if infected</li>
+                    <li><strong>Compatibility:</strong> Run older or different operating systems</li>
+                    <li><strong>Isolation:</strong> Test malware or suspicious software safely</li>
+                </ul>
+            </div>
+
+            <h3>How to Install a Virtual Machine (VirtualBox)</h3>
+            <p>This guide is for Windows 10 systems installing VirtualBox with Kali Linux.</p>
+            
+            <div class="resource-list">
+                <h4>Required Resources:</h4>
+                <ul>
+                    <li>VirtualBox software</li>
+                    <li>Kali Linux ISO image</li>
+                    <li>7-Zip (for file extraction)</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <h4>Step 1: Download VirtualBox</h4>
+                <p>Visit: <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">https://www.virtualbox.org/wiki/Downloads</a></p>
+                <p>Click "Windows hosts" to download VirtualBox 7.0.18 or newer</p>
+                <img src="virtualbox-download.png" alt="VirtualBox download page" class="screenshot">
+            </div>
+
+            <div class="step-box">
+                <h4>Step 2: Download Kali Linux</h4>
+                <p>Visit: <a href="https://www.kali.org/downloads/" target="_blank">https://www.kali.org/downloads/</a></p>
+                <p>Click "Virtual Machines" → Select "VirtualBox 64-bit"</p>
+                <p>File will be named: <span class="code">kali-linux-2024.2-virtualbox-amd64.ova</span></p>
+            </div>
+
+            <div class="step-box">
+                <h4>Step 3: Install 7-Zip (if needed)</h4>
+                <p>Visit: <a href="https://www.7-zip.org/" target="_blank">https://www.7-zip.org/</a></p>
+                <p>Download the 64-bit version for your system</p>
+            </div>
+
+            <div class="step-box">
+                <h4>Step 4: Set Up VirtualBox</h4>
+                <ol>
+                    <li>Run the VirtualBox installer and complete setup</li>
+                    <li>Open VirtualBox and click "Import"</li>
+                    <li>Select the downloaded Kali Linux file (<span class="code">.ova</span>)</li>
+                    <li>Follow the import wizard (use default settings)</li>
+                    <li>Start your new virtual machine</li>
+                </ol>
+                <img src="virtualbox-import.png" alt="VirtualBox import screen" class="screenshot">
+            </div>
+
+            <div class="step-box">
+                <h4>Step 5: Log In to Kali Linux</h4>
+                <p>Default credentials:</p>
+                <p>Username: <span class="code">kali</span></p>
+                <p>Password: <span class="code">kali</span></p>
+                <img src="kali-login.png" alt="Kali Linux login screen" class="screenshot">
+            </div>
+
+            <div class="benefit-box">
+                <h4>Security Tips for Virtual Machines:</h4>
+                <ul>
+                    <li>Take snapshots before making major changes</li>
+                    <li>Isolate network connections when testing malware</li>
+                    <li>Keep your VM software updated</li>
+                    <li>Don't use the same passwords as your host machine</li>
+                    <li>Disable shared folders/clipboard when not needed</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="security-lesson1.html" class="nav-button">← Previous Lesson</a>
+            <a href="cyber-security.html" class="nav-button">Back to Cyber Security</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Net Tutorials. All rights reserved.
+    </footer>
+</body>
+</html>

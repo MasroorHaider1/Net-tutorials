@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px; /* Added padding for spacing */
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.logo {
+    margin-right: 20px; /* Space between logo and title */
+}
+
+.logo img {
+    max-width: 100px; /* Adjust logo size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust title size */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Lessons Page Styles */
+.info-row {
+    margin: 40px auto;
+    max-width: 90%; /* Set max-width to 90% */
+}
+
+.info-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centers the columns */
+    width: 100%; /* Takes full container width */
+}
+
+.column {
+    flex: 0 0 calc(16.666% - 17px); /* 100%/6 minus gap space */
+    max-width: calc(16.666% - 17px); /* 100%/6 minus gap space */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+.column-1 {
+    background-color: #f7e6c0; /* Light yellow for Science */
+}
+
+.column-2 {
+    background-color: #f1d1b0; /* Soft orange for Technology */
+}
+
+.column-3 {
+    background-color: #fff5e1; /* Soft peach for Math */
+}
+
+.column-4 {
+    background-color: #d1e8f1; /* Light blue for Engineering */
+}
+
+.column-5 {
+    background-color: #e1d1f1; /* Light purple for Other */
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px; /* Space between title and image */
+}
+
+.column h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px; /* Space between title and image */
+}
+
+.column p {
+    margin-top: 15px; /* Space between image and text */
+    line-height: 1.5;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

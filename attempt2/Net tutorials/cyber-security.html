@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security - Net Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lesson-list {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .lesson-card {
+            padding: 25px;
+            background-color: #f1d1b0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .lesson-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .lesson-nav {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .nav-button {
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Net Tutorials Logo">
+        </div>
+        <h1>Net Tutorials</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="technology.html">Technology</a>
+    </nav>
+
+    <div class="container">
+        <h2>Cyber Security Lessons</h2>
+        <p>Learn essential cyber security concepts through these lessons:</p>
+
+        <div class="lesson-list">
+            <!-- Lesson 0 -->
+            <div class="lesson-card" onclick="window.location.href='security-lesson0.html'">
+                <h3>Lesson 0: Introduction to Cyber Security</h3>
+                <p>Basic concepts and importance of cyber security</p>
+            </div>
+
+            <!-- Lesson 1 -->
+            <div class="lesson-card" onclick="window.location.href='security-lesson1.html'">
+                <h3>Lesson 1: Protecting Yourself Online</h3>
+                <p>How to stay safe and secure on the internet</p>
+            </div>
+
+            <!-- Lesson 2 -->
+            <div class="lesson-card" onclick="window.location.href='security-lesson2.html'">
+                <h3>Lesson 2: Introduction to Virtual Machines</h3>
+                <p>Using virtual machines for security testing</p>
+            </div>
+        </div>
+
+        <div class="lesson-nav">
+            <button class="nav-button" onclick="window.location.href='technology.html'">Back to Technology</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Net Tutorials. All rights reserved.
+    </footer>
+</body>
+</html>
